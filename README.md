@@ -101,22 +101,22 @@ Users ────────────────────────�
                                                             │
 Brands                                                      │
   Id, Name, Description, ImageUrl, IsActive                 │
-    │                                                        │
+    │                                                       │
     └── Categories                                          │
           Id, Name, BrandId                                 │
               │                                             │
               └── Products ──────── Packagings              │
                     Id, Name, Price  Id, Name               │
                     CategoryId, PackagingId                 │
-                    StockQuantity, ImageUrl                  │
-                       │                                     │
+                    StockQuantity, ImageUrl                 │
+                       │                                    │
                        ├── CartItems (UserId FK) ───────────┤
                        │     Id, UserId, ProductId, Qty     │
-                       │                                     │
-                       └── OrderItems                        │
+                       │                                    │
+                       └── OrderItems                       │
                              Id, OrderId, ProductId         │
-                             Quantity, UnitPrice             │
-                                │                            │
+                             Quantity, UnitPrice            │
+                                │                           │
                              Orders (UserId FK) ────────────┘
                                Id, UserId, Status
                                TotalAmount, DeliveryAddress
